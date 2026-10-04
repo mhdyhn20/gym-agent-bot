@@ -29,7 +29,6 @@ public class MainActivity extends Activity {
     s.setDefaultTextEncodingName("UTF-8");
     s.setLoadWithOverviewMode(false);
     s.setUseWideViewPort(false);
-    WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
     web.setWebViewClient(new WebViewClient() {
       @Override public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
         if (request == null || request.isForMainFrame()) Toast.makeText(MainActivity.this, "خطا در باز کردن برنامه", Toast.LENGTH_SHORT).show();
